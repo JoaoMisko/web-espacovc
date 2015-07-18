@@ -41,7 +41,7 @@ angular.module('espacoVC').directive('photoGallery', function() {
 	  	$scope.open = function (index) {
 
     		var modalInstance = $modal.open({
-		      templateUrl: '/app/modals/photo-modal/photo-modal.html',
+		      templateUrl: 'modals/photo-modal/photo-modal.html',
 		      controller: 'photoModalCtrl',
 		      size: 'lg',
 		      resolve: {
