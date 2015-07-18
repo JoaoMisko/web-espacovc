@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" ng-app="espacoVC">
+<head>
+  <meta charset="utf-8">
+  <title>Espaço VC</title>
+
+  <!-- style sheets -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/accordian.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <!-- bower components -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/ui-bootstrap/ui-bootstrap-tpls-0.12.1.min.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.min.js"></script>
+  <script src="bower_components/ngstorage/ngStorage.min.js"></script>
+  <script src="bower_components/rounding-progres-bar/roundProgress.min.js"></script>
+  <!-- app.js -->
+  <script src="app.js"></script>
+  <!-- partials -->
+  <script src="partials/main/main.js"></script>
+  <script src="partials/login/login.js"></script>
+  <script src="partials/building-menu/building-menu.js"></script>
+  <!-- directives -->
+  <script src="directives/menu/menu.js"></script>
+  <script src="directives/header/header.js"></script>
+  <script src="directives/header-page/header-page.js"></script>
+  <script src="directives/photo-gallery/photo-gallery.js"></script>
+  <script src="directives/building-status/building-status.js"></script>
+  <script src="directives/building-details/building-details.js"></script>
+  <script src="directives/gd-img/gd-img.js"></script> 
+  <!-- services -->
+  <script src="services/vcservice.js"></script>
+  <script src="services/vcrequests.js"></script>
+  <!-- modals -->
+  <script src="modals/photo-modal/photo-modal.js"></script>
+
+
+</head>
+<body>
+
+  <div class="view-container">
+    <div ng-view class="view-frame"></div>
+  </div>
+
+
+
+</body>
+</html>

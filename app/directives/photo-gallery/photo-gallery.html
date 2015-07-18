@@ -1,0 +1,24 @@
+<div>
+	<div class="col-xs-12"ng-if="!photos" style="text-align:center;margin-top:100px">
+		<img src="img/SpinningWheel.gif"> </br>
+		Carregando...
+	</div>
+	<div class="col-xs-12 subheader" style="padding-top:2px;">
+		<h4>{{week}}</h4>
+	</div>
+	<div>
+		<!-- <div ng-repeat="slide in photos | orderBy : 'id'"> -->
+		<div ng-repeat="slide in photos">
+		    <div class="col-xs-2"style="padding:0px">
+		        <a href="#/main" ng-click="open($index)">
+		        	<!-- <img src="{{slide.media}}?base64=true" class="photoListClass"></a> -->
+		        	<div class="photoListClass">
+		        		<gd-image placeholder="img/placeholder.png" url="{{slide.media}}?base64=true" width="100%" height="150px" />
+		    		</div>
+		    </div>
+	    </div>
+	</div>
+</div>
+    
+
+    

@@ -1,0 +1,145 @@
+<div>
+	<div class="col-xs-12"ng-if="!data" style="text-align:center;margin-top:100px">
+		<img src="img/SpinningWheel.gif"> </br>
+		Carregando...
+	</div>
+	<div class="col-xs-6">
+		<div style="margin-top:100px">
+			<div
+		    round-progress
+		    max="max"
+		    current="data.total"
+		    color="#a10f1c"
+		    bgcolor="#eaeaea"
+		    radius="150"
+		    stroke="20"
+		    semi="false"
+		    rounded="true"
+		    iterations="50"
+		    animation="easeInOutQuart"
+		    style="margin:auto; display:block">
+			</div>
+			<div class="overDash overDashTotal">{{data.total}}%</br>
+				<div class="labelDashTotal">TOTAL</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-3">
+		<div style="margin-top:60px" ng-show="">
+			<div
+		    round-progress
+		    max="max"
+		    current="data.alvenaria"
+		    color="#a10f1c"
+		    bgcolor="#eaeaea"
+		    radius="75"
+		    stroke="20"
+		    semi="true"
+		    rounded="true"
+		    iterations="50"
+		    animation="easeInOutQuart"
+		    style="margin:auto; display:block">
+			</div>
+			<div class="overDash">{{data.alvenaria}}%</br>
+				<div class="labelDash">Alvenaria</div>
+			</div>
+		</div>
+		<div style="margin-top:60px">
+			<div
+		    round-progress
+		    max="max"
+		    current="data.dry"
+		    color="#a10f1c"
+		    bgcolor="#eaeaea"
+		    radius="75"
+		    stroke="20"
+		    semi="true"
+		    rounded="true"
+		    iterations="50"
+		    animation="easeInOutQuart"
+		    style="margin:auto; display:block">
+			</div>
+			<div class="overDash">{{data.dry}}%</br>
+				<div class="labelDash">Dry Wall</div>
+			</div>
+		</div>
+		<div style="margin-top:60px">
+			<div
+		    round-progress
+		    max="max"
+		    current="data.eletrica"
+		    color="#a10f1c"
+		    bgcolor="#eaeaea"
+		    radius="75"
+		    stroke="20"
+		    semi="true"
+		    rounded="true"
+		    iterations="50"
+		    animation="easeInOutQuart"
+		    style="margin:auto; display:block">
+			</div>
+			<div class="overDash">{{data.eletrica}}%</br>
+				<div class="labelDash">Elétrica</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-3">
+		<div style="margin-top:60px">
+			<div
+		    round-progress
+		    max="max"
+		    current="data.paint"
+		    color="#a10f1c"
+		    bgcolor="#eaeaea"
+		    radius="75"
+		    stroke="20"
+		    semi="true"
+		    rounded="true"
+		    iterations="50"
+		    animation="easeInOutQuart"
+		    style="margin:auto; display:block">
+			</div>
+			<div class="overDash">{{data.paint}}%</br>
+				<div class="labelDash">Pintura</div>
+			</div>
+		</div>
+		<div style="margin-top:60px">
+			<div
+		    round-progress
+		    max="max"
+		    current="data.hidraulica"
+		    color="#a10f1c"
+		    bgcolor="#eaeaea"
+		    radius="75"
+		    stroke="20"
+		    semi="true"
+		    rounded="true"
+		    iterations="50"
+		    animation="easeInOutQuart"
+		    style="margin:auto; display:block">
+			</div>
+			<div class="overDash">{{data.hidraulica}}%</br>
+				<div class="labelDash">Hidráulica</div>
+			</div>
+		</div>
+		<!-- <div style="margin-top:60px">
+			<div
+		    round-progress
+		    max="max"
+		    current="20"
+		    color="#a10f1c"
+		    bgcolor="#eaeaea"
+		    radius="75"
+		    stroke="20"
+		    semi="true"
+		    rounded="true"
+		    iterations="50"
+		    animation="easeInOutQuart"
+		    style="margin:auto; display:block">
+			</div>
+			<div class="overDash">{{data.eletrica}}%</br>
+				<div class="labelDash">Elétrica</div>
+			</div>
+		</div> -->
+	</div>
+</div>

@@ -1,0 +1,20 @@
+{
+  "name": "espaco-vc",
+  "description": "as",
+  "main": "proxy.js",
+  "scripts": {
+    "start": "node proxy.js"
+  },
+  "engines": {
+    "node": "0.10.34"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "angular"
+  ],
+  "license": "MIT"
+}

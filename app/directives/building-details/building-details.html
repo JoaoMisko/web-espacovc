@@ -1,0 +1,78 @@
+<div>
+	<div class="col-xs-12 subheader" style="padding-top:2px;">
+		<h4>{{data.code}}</h4>
+	</div>
+	<div class="col-xs-12"ng-if="!data" style="text-align:center;margin-top:100px">
+		<img src="img/SpinningWheel.gif"> </br>
+		Carregando...
+	</div>
+	<div class="col-xs-12">
+		<div class="col-xs-8" style="margin-top:20px">
+			<div class="col-xs-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+					    <h3 class="panel-title">Endereço</h3>
+					</div>
+					<div class="panel-body" style="color:#676767">
+					    {{data.address}} - {{data.city}} - {{data.state}}
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+					    <h3 class="panel-title">Datas</h3>
+					</div>
+					<div class="panel-body" style="color:#676767">
+					    Data de Início: {{data.startdate}} Data de Entrega: {{data.enddate}}
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+					    <h3 class="panel-title">Escopo</h3>
+					</div>
+					<div class="panel-body" style="height:160px">
+						<div class="col-xs-1" style="padding:0px"></div>
+					    <div ng-repeat="item in data.scope">
+					    	<div class="col-xs-2" style="padding:5px;margin-top:12px">
+					    		<div class="scope-style">{{item}}</div>
+					    	</div>
+						</div>
+						<div class="col-xs-1"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-4" style="margin-top:20px">
+			<div class="col-xs-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+					    <h3 class="panel-title">Contato Comercial</h3>
+					</div>
+					<div class="panel-body" style="color:#676767">
+					    <div style="font-size:16px"><b>{{data.contactcom.name}}</b></div>
+					    Diretor Comercial</br></br>
+				    	<span class="glyphicon glyphicon-envelope" aria-hidden="true"> {{data.contactcom.email}}</span></br></br>
+						<span class="glyphicon glyphicon-earphone" aria-hidden="true"> {{data.contactcom.phone}}</span></br>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+					    <h3 class="panel-title">Contato Técnico</h3>
+					</div>
+					<div class="panel-body" style="color:#676767">
+					    <div style="font-size:16px"><b>{{data.contacttech.name}}</b></div>
+					    Diretor de Operações</br></br>
+				    	<span class="glyphicon glyphicon-envelope" aria-hidden="true"> {{data.contacttech.email}}</span></br></br>
+						<span class="glyphicon glyphicon-earphone" aria-hidden="true"> {{data.contacttech.phone}}</span></br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
