@@ -1,12 +1,14 @@
 {
   "name": "espaco-vc",
+  "version": "0.1.4",
   "description": "as",
   "main": "proxy.js",
   "scripts": {
     "start": "node proxy.js"
   },
   "engines": {
-    "node": "0.10.34"
+    "node": "0.10.34",
+    "npm": "2.1.14"
   },
   "repository": {
     "type": "git"
