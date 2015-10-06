@@ -59,15 +59,6 @@ angular.module('espacoVC').factory('vcRequests', function($http) {
 				params:{'building':buildid}
 			});
 		},
-		// getMedia : function(url){
-		// 	return $http.get(url,{
-		// 		headers:{
-		// 			'Accept' : accept,
-		// 			'X-Api-Token': token
-		// 		},
-		// 		params:{'encoding':'base64'}
-		// 	});
-		// },
 		getStatus : function(buildid){
 			return $http.get(base_url+'building_status',{
 				headers:{

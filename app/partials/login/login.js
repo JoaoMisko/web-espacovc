@@ -26,7 +26,10 @@ angular.module('espacoVC').controller('loginCtrl', function ($scope, myService, 
 			$localStorage.user = $scope.user;
 			$localStorage.pass = $scope.pass;
 			//redirect to the main page
-			$location.path('/buildingmenu');
+			if(data.user.admin == 'false')
+				$location.path('/buildingmenu');
+			else
+				$location.path('/admin');
 		}).error(function (data){
 			$scope.showAlert = true;
 			$scope.showSpin = false;

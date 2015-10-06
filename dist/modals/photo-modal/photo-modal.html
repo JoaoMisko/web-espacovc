@@ -1,0 +1,18 @@
+<div>
+    <div class="modal-header">
+        <h3 class="modal-title">Foto da semana: {{items[index].startdate}} - {{items[index].enddate}} 
+            <a href="#/main"ng-click="cancel()" style="color:white"><span class="glyphicon glyphicon-remove" style="float:right"></span></a>
+        </h3>
+    </div>
+    <div class="modal-body">
+        <div class="modalImg center-div-class2" style="max-height:400px" ng-repeat="item in items">
+            <div ng-show="item.visible">
+                <gd-image placeholder="img/placeholder.png" url="{{item.media}}?base64=true" width="auto" height="400px" ></gd-image>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="previous()">Anterior</button>
+        <button class="btn btn-primary" ng-click="next()">Próxima</button>
+    </div>
+</div>

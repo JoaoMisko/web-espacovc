@@ -1,0 +1,10 @@
+<div class="col-xs-2 nopadding">
+	<header-vc data="vcHeader"></header-vc>
+	<menu-vc weeks="weeks" page="headerPage" idweek="idweek"></menu-vc>
+</div>
+<div class="col-xs-10 nopadding">
+	<header-page data="headerPage"></header-page>
+	<photo-gallery data="photos" interval="5000" idweek="idweek" ng-show="showRelatorio"></photo-gallery>
+	<building-status data="buildingStatus" ng-show="showStatus"></building-status>
+	<building-details data="buildingDetails"  ng-show="showDetalhes"></building-details>
+</div>
